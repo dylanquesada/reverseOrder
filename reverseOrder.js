@@ -24,4 +24,24 @@ function reverseString(string){
 	return reversed.toString();
 }
 
+
+function concatonateArrayToCommalessString(array){
+	var outputString = "";
+	for (var i = 0; i < array.length; i++) {
+		outputString = outputString.concat(array[i])
+	}
+	return outputString;
+
+}
+var array = ["x", "y", "z", 1];
+var x = array[1].concat(array[2]);
+
+// function removeCommasWithoutRemovingOriginalCommas(string){
+// 	var original = string;
+// 	for (var i = 1; i < original.length; i+=2) {
+// 		commaless i]
+// 	}
+// }
 console.log(reverseString("popcorn"));
+console.log(x);
+console.log(concatonateArrayToCommalessString(array));
